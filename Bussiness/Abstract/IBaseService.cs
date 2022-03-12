@@ -9,9 +9,9 @@ namespace Bussiness.Abstract
 {
     public interface IBaseService<TEntity> where TEntity:class,IEntity,new()
     {
-        void Add(IEntity entity);
-        void Delete(IEntity entity);
-        void Update(IEntity entity);
+        void Add(TEntity entity);
+        void Delete(TEntity entity);
+        void Update(TEntity entity);
         List<TEntity> GetAll();
         TEntity Get(int id);
     }
